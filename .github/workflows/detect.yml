@@ -1,0 +1,33 @@
+name: Detect
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches: [main]
+
+env:
+  PKL_VERSION: 0.26.3
+  PKL_ARCH: macos-aarch64
+
+permissions:
+  contents: write
+
+jobs:
+  submit_dependencies:
+    name: Submit Dependencies
+    runs-on: macos-14
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pkl
+        run: |
+          curl -L -o pkl "https://github.com/apple/pkl/releases/download/${PKL_VERSION}/pkl-${PKL_ARCH}"
+          chmod +x pkl
+          sudo mv pkl /usr/local/bin/pkl
+          pkl --version
+
+      - name: Run dependency submission
+        uses: willswire/cosmic-detector@main
