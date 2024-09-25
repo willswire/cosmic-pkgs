@@ -12,7 +12,7 @@ version = "1.0.0"
 
 hash = "d988cd785d44c57954b8bf74162f91d4c91de6c21d877d47a557d82c4b48effb"
 
-executablePath = "/hermes"
+executablePaths = List("/hermes")
 
 testArgs = List("help")
 

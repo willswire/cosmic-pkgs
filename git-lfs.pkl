@@ -12,7 +12,7 @@ version = "3.5.1"
 
 hash = "1570833e5011290dff12a18416580bfed576bc797b7b521122916e09adf4622d"
 
-executablePath = "/git-lfs-\(version)/git-lfs"
+executablePaths = List("/git-lfs-\(version)/git-lfs")
 
 testArgs = List("version")
 

@@ -16,7 +16,7 @@ version: String
 hash: String
 
 /// The path of the executable (relative to the resulting URL resource)
-executablePath: String
+executablePaths: List<String>
 
 /// Arguments to pass to the executable to validate its functionality
 testArgs: List<String>
