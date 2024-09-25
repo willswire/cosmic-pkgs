@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "hermes"
 
 url = "https://github.com/cadensstudio/hermes/releases/download/v\(version)/hermes_v\(version)_macOS_arm64.tar.gz"

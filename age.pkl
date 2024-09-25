@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "age"
 
 url = "https://github.com/FiloSottile/age/releases/download/v\(version)/age-v\(version)-darwin-arm64.tar.gz"

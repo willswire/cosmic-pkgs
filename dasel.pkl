@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "dasel"
 
 url = "https://github.com/TomWright/dasel/releases/download/v\(version)/dasel_darwin_arm64"

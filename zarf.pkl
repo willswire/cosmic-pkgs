@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "zarf"
 
 url = "https://github.com/zarf-dev/zarf/releases/download/v\(version)/zarf_v\(version)_Darwin_all"

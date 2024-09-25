@@ -21,6 +21,9 @@ executablePath: String
 /// Arguments to pass to the executable to validate its functionality
 testArgs: List<String>
 
-/// The resource bundle type
-typealias BundleType = "Binary"|"Archive"|"Zip"
-type: BundleType
+/// The distribution type
+typealias DistributionType = "Binary"|"Archive"|"Zip"
+type: DistributionType
+
+/// Indicate if the package contains more than a single executable
+isBundle: Boolean

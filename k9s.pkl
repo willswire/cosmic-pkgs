@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "k9s"
 
 url = "https://github.com/derailed/k9s/releases/download/v\(version)/k9s_Darwin_arm64.tar.gz"

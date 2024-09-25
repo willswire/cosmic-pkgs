@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "sops"
 
 url = "https://github.com/getsops/sops/releases/download/v\(version)/sops-v\(version).darwin.arm64"

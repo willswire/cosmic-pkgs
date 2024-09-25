@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "git-lfs"
 
 url = "https://github.com/git-lfs/git-lfs/releases/download/v\(version)/git-lfs-darwin-arm64-v\(version).zip"
