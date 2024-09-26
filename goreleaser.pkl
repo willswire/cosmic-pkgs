@@ -2,17 +2,17 @@ amends ".package.pkl"
 
 isBundle = false
 
-name = "git-lfs"
+name = "goreleaser"
 
-url = "https://github.com/git-lfs/git-lfs/releases/download/v\(version)/git-lfs-darwin-arm64-v\(version).zip"
+url = "https://github.com/goreleaser/goreleaser/releases/download/v\(version)/goreleaser_Darwin_arm64.tar.gz"
 
-purl = "pkg:golang/github.com/git-lfs/git-lfs/v3@\(version)"
+purl = "pkg:golang/github.com/goreleaser/goreleaser/v2@\(version)"
 
-version = "3.5.1"
+version = "2.3.2"
 
-hash = "1570833e5011290dff12a18416580bfed576bc797b7b521122916e09adf4622d"
+hash = "d77b5dc1b0652df6bc114faa0d942c8a139e1d397b02a9195855544b5a4e2488"
 
-executablePaths = List("/goreleaser_Darwin_arm64/goreleaser")
+executablePaths = List("/goreleaser")
 
 testArgs = List("--version")
 
