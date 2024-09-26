@@ -1,0 +1,31 @@
+amends ".package.pkl"
+
+isBundle = true
+
+name = "libwebp"
+
+url = "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-\(version)-mac-arm64.tar.gz"
+
+purl = "pkg:googlesource/webm/libwebp@v\(version)"
+
+version = "1.4.0"
+
+hash = "5a6d1682b2eff621218474a0a54557f3a22beb4805576732edee56fe133f6a4e"
+
+executablePaths = List(
+    "/bin/anim_diff",
+    "/bin/anim_dump",
+    "/bin/cwebp",
+    "/bin/dwebp",
+    "/bin/get_disto",
+    "/bin/gif2webp",
+    "/bin/img2webp",
+    "/bin/vwebp",
+    "/bin/webp_quality",
+    "/bin/webpinfo",
+    "/bin/webpmux"
+)
+
+testArgs = List("-version")
+
+type = "Archive"
