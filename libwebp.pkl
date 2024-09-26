@@ -6,7 +6,7 @@ name = "libwebp"
 
 url = "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-\(version)-mac-arm64.tar.gz"
 
-purl = "pkg:googlesource/webm/libwebp@v\(version)"
+purl = "pkg:github/webmproject/libwebp@v\(version)"
 
 version = "1.4.0"
 
