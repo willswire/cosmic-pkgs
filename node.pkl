@@ -1,0 +1,23 @@
+amends ".package.pkl"
+
+isBundle = true
+
+name = "node"
+
+url = "https://nodejs.org/dist/v\(version)/node-v\(version)-darwin-arm64.tar.gz"
+
+purl = "pkg:github/nodejs/node@v\(version)"
+
+version = "22.9.0"
+
+hash = "7d62217f64491524db6bcfb059049d64fd6a9adcae52565ed54aaad365a55afd"
+
+executablePaths = List(
+    "/bin/corepack",
+    "/bin/node",
+    "/bin/npm",
+    "/bin/npx")
+
+testArgs = List("--version")
+
+type = "Archive"

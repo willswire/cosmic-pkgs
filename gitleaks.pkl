@@ -1,5 +1,7 @@
 amends ".package.pkl"
 
+isBundle = false
+
 name = "gitleaks"
 
 url = "https://github.com/gitleaks/gitleaks/releases/download/v\(version)/gitleaks_\(version)_darwin_arm64.tar.gz"
@@ -10,7 +12,7 @@ version = "8.19.2"
 
 hash = "050321b9c0d5e00f6d74fc9aa112c8b174c63919465adb21a504ba84dbcc6411"
 
-executablePath = "/gitleaks"
+executablePaths = List("/gitleaks")
 
 testArgs = List("--version")
 
