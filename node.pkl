@@ -12,7 +12,11 @@ version = "22.9.0"
 
 hash = "7d62217f64491524db6bcfb059049d64fd6a9adcae52565ed54aaad365a55afd"
 
-executablePaths = List("/bin/corepack", "/bin/node", "/bin/npm", "/bin/npx")
+executablePaths = List(
+    "/node-v22.9.0-darwin-arm64/bin/corepack",
+    "/node-v22.9.0-darwin-arm64/bin/node",
+    "/node-v22.9.0-darwin-arm64/bin/npm",
+    "/node-v22.9.0-darwin-arm64/bin/npx")
 
 testArgs = List("--version")
 
